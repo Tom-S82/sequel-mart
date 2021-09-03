@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Test data driven website integrating with Express, Node.js & pg-promise">
+  <link rel="stylesheet" href="src/styles.css">
+  <title>Sequel-Mart</title>
+</head>
+<body>
+  <div class="container">
+
+    <header class="section-01">
+      <div class="logo">
+        Sequel-<span>Mart</span>
+      </div>
+      <nav class="navbar">
+        <ul>
+          <li class="navbar-item">
+            <a href="index.html">Stores</a>
+          </li>
+          <li class="navbar-item">Customers</li>
+          <li class="navbar-item">Products</li>
+          <li class="navbar-item selected">
+            <a href="submit-order.html">Place Order</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    
+    <section class="section-order">
+      <main>
+        <h1 class="store-name"><span>Northern Store</span></h1>
+
+        <form action="/action_page.php" class="order-forms">
+          <div class="order-forms__form">
+            <label for="customers">Customer:</label>
+            <select name="customers" class="customers_distinct" id="order-forms--customers" data-url="/customers_distinct">
+            </select>
+          </div>
+
+          <div class="order-forms__form">
+            <label for="products">Product Item:</label>
+            <select name="products" class="products_distinct" id="order-forms--products" data-url="/products_distinct">
+            </select>
+          </div>
+
+          <div class="order-forms__form">
+            <label for="quantity">Quantity:</label>
+            <select name="quantity" class="products_quantity" id="order-forms--quantity">
+              <option>1</option>
+              <option>2</option>
+              <option>3</option>
+              <option>4</option>
+              <option>5</option>
+              <option>6</option>
+              <option>7</option>
+              <option>8</option>
+              <option>9</option>
+              <option>10</option>
+            </select>
+          </div>
+
+          <div class="order-forms__form">
+            <label for="feedback">Feedback:</label>
+            <select name="feedback" class="products_feedback" id="order-forms--feedback">
+              <option>1</option>
+              <option>2</option>
+              <option>3</option>
+              <option>4</option>
+              <option>5</option>
+            </select>
+          </div>
+
+        </br>
+
+          <button class ="btn-form basket">Add to Basket  <img id="basket" src="./src/img/Shopping_Cart.svg" width="25" height="25"></img></button>
+          <input type="submit" value="Finish and Pay" class ="btn-form" >
+
+        </form>
+
+      </main>
+      
+    </section>
+    <div class="divider-btm"></div>
+
+    <footer>
+      <div class="footer-panel">
+        <div class="copyright">(C) 2021.  Thomas Steeples.  All rights reserved.</div>
+      </div>
+    </footer>
+  </div>
+  
+  <script defer src="src/data.js" type="module"></script>
+
+</body>
+</html>

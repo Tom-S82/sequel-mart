@@ -1,0 +1,28 @@
+{
+  "name": "sequel-mart",
+  "version": "1.0.0",
+  "description": "Example of integrating a basic SQL relational database into a simple front-end website",
+  "main": "index.js",
+  "scripts": {
+    "start": "node backend/app.js",
+    "dev": "nodemon backend/app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Tom-S82/sequel-mart.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Tom-S82/sequel-mart/issues"
+  },
+  "homepage": "https://github.com/Tom-S82/sequel-mart#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "pg-promise": "^10.11.0"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.12"
+  }
+}

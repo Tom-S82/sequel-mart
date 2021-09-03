@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Test data driven website integrating with Express, Node.js & pg-promise">
+  <link rel="stylesheet" href="src/styles.css">
+  <title>Sequel-Mart</title>
+</head>
+<body>
+  <div class="container">
+
+    <header class="section-01">
+      <div class="logo">
+        Sequel-<span>Mart</span>
+      </div>
+      <nav class="navbar">
+        <ul>
+          <li class="navbar-item selected">
+            <a href="index.html">Stores</a>
+          </li>
+          <li class="navbar-item">Customers</li>
+          <li class="navbar-item">Products</li>
+          <li class="navbar-item">
+            <a href="submit-order.html">Place Order</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    
+    <section class="section-02">
+      <main>
+        <h1 class="store-name"><span>Northern Store</span></h1>
+        
+        <div class="cards">
+          <div class="card">
+            <div class="card__title">Total Transactions</div>
+            <div class="card__value summary" id="transactions" data-url="/summary">...</div>
+          </div>
+
+          <div class="card">
+            <div class="card__title">Total Products Sold</div>
+            <div class="card__value summary" id="total-products-sold" data-url="/summary">...</div>
+          </div>
+
+          <div class="card">
+            <div class="card__title">Avg. Feedback</div>
+            <div class="card__value summary" id="avg-feedback" data-url="/summary">...</div>
+          </div>
+          
+          <div class="card">
+            <div class="card__title">Total Revenue</div>
+            <div class="card__value summary" id="total-revenue" data-url="/summary">...</div>
+          </div>
+
+          <div class="card">
+            <div class="card__title">Total Product Cost</div>
+            <div class="card__value summary" id="total-product-cost" data-url="/summary">...</div>
+          </div>
+
+          <div class="card">
+            <div class="card__title">Gross Profit</div>
+            <div class="card__value summary" id="gross-profit" data-url="/summary">...</div>
+          </div>
+        </div>
+
+      </main>
+      
+    </section>
+    <div class="divider-btm"></div>
+
+    <section class="section-03">
+      <h2 class="top-x">Last 10 Transactions</h2>
+
+      <div class="data-table data-table-transactions" data-url="/transactions">
+      </div>
+
+    </section>
+
+    <section class="section-04">
+      <h2 class="top-x">Top 10 Customers</h2>
+      <div class="data-table data-table-customers" data-url="/customers">
+      </div>
+      
+    </section>
+
+    <section class="section-05">
+      <h2 class="top-x">Top 10 Products</h2>
+
+      <div class="data-table data-table-products" data-url="/products">
+      </div>
+
+    </section>
+
+    <footer>
+      <div class="footer-panel">
+        <div class="copyright">(C) 2021.  Thomas Steeples.  All rights reserved.</div>
+      </div>
+    </footer>
+  </div>
+  
+  <script defer src="src/data.js" type="module"></script>
+
+</body>
+</html>
