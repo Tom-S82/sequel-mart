@@ -1,5 +1,6 @@
 --Create the view:
 /*
+    `
     SELECT 		sh.sale_id AS transaction, 
 			cu.customer_name AS customer, 
 			sh.date_sale AS date, 
@@ -15,6 +16,7 @@
           sh.feedback_score
     ORDER BY 	sh.date_sale DESC
     LIMIT 		10;
+    `
 */
 
 

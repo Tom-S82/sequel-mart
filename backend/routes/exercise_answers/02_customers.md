@@ -1,5 +1,6 @@
 --Create the view (NOTE: joining the store is optional in this example):
 /*
+    `
     SELECT		cu.customer_name AS customer, 
               MAX(sh.date_sale) AS most_recent,
               COUNT(sh.sale_id) AS transactions,
@@ -14,6 +15,7 @@
     GROUP BY	cu.customer_name
     ORDER BY 	CAST(AVG(sd.revenue::numeric) AS NUMERIC(9,2)) DESC
     LIMIT 		10;
+    `
 */
 
 

@@ -1,5 +1,6 @@
 --Create the view (NOTE: joining the store is optional in this example):
 /*
+    `
     SELECT		pr.product_item AS product_item,
               pr.product_variety AS product_variety,
               pr.pack_size AS pack_size,
@@ -18,6 +19,7 @@
               pr.inventory
     ORDER BY 	CAST(SUM(sd.items_sold) AS NUMERIC(9,1)) DESC
     LIMIT 		10;
+    `
 */
 
 

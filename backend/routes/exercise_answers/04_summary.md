@@ -1,6 +1,7 @@
 --Create the view:
 /*
 
+`
 CREATE OR REPLACE VIEW "sequel-mart-schema"."v_Web_Home_Summary"
  AS
     SELECT 
@@ -28,6 +29,7 @@ CREATE OR REPLACE VIEW "sequel-mart-schema"."v_Web_Home_Summary"
       SELECT CAST(AVG(feedback_score) AS NUMERIC(9,1)) AS avg_feedback
       FROM "sequel-mart-schema"."Sales_Header"
     );
+`
 */
 
 
