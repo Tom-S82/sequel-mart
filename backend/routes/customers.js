@@ -6,6 +6,7 @@ const db = require('../db');        //Connects to DB & sends a GET request for i
 
 /* Specify a query, once the promise has been fulfilled, convert it to json & send it to the target page
 - router.get('target page, (request, response), db.any = any number (unknown) of rows) */
+
 router.get('/', (req, res) => {
   db.any(
     `
