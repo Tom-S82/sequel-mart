@@ -33,7 +33,7 @@ CREATE OR REPLACE VIEW "sequel-mart-schema"."v_Web_Home_Summary"
 */
 
 
---Write the code from the view into line 12 of routes/summary.js
+--Write the code from the view into line 12 of routes/summary.js 
     `
     SELECT total_transactions, total_products_sold, revenue, cost_of_sales, gross_profit, avg_feedback
     FROM "sequel-mart-schema"."v_Web_Home_Summary";
